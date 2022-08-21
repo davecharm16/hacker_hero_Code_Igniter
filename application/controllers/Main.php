@@ -6,21 +6,21 @@
 			echo "I am Main Class!";
 		}
 
-		public function hello($any){
-			echo "Hello World";
+		public function world(){
+			$data = array(
+				'image_count' => 3,
+			);
+			$this->load->view('world',$data);
 		}
 
-		public function say($any){
-			echo "HI";
+		public function ninjas($any){
+			$data = array(
+				'value' => $any,
+			);
+			$this->load->view('ninjas', $data);
 		}
 
-		public function say_anything($any){
-			echo strtoupper($any);
-		}
 
-		public function danger(){
-			redirect('/main');
-		}
 	}
 
 ?>
